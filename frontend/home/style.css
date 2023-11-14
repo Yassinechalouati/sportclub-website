@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+    
+}
+
+.avatar {
+      
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.avatar-dropdown {
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 100%; 
+  right: 0 ;
+  background-color: rgba(14,18,26,255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  border-radius: 6px;
+  animation: dropdown-animation 0.5s;
+  
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.logout-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.dropdown-item a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; 
+}
+
+.user-name {
+  margin-left:8px;
+  margin-top: 10px;
+}
+
+.line_break {
+  height: 0.2px;
+  background-color: grey;
+  border: none;
+}
+
+
+
+.down-arrow {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -30px;
+  cursor: pointer;
+  margin-left: 4px;
+ margin-top: 15px;
+}
+
+.title {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    
+  }
+
+  body {
+    background-color: #18181B;
+  }
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../pfa_assets/images/home_background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px); /* Apply blur effect */
+    z-index: -1;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+  }
+
+  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #nav-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+      font-size: 20px;
+  }
+  
+  
+  
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+  
+  }
+  
+  nav ul li a:hover {
+      color: #32AAA1
+      
+  }
+  
+  .Centered-title {
+    color: white;
+    font-size: 7em;
+    font-weight: bold;
+    
+  }
+
+  .Centered-content { 
+    color: white;
+    padding: 0 28%;
+    text-align: center;
+    color: #C4BABA;
+    font-size:20px
+  }
+
+  .Learn_more{
+    cursor: pointer;
+    margin-top: 2em;
+    background-color:#32AAA1;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size:16px;
+    color: white;
+
+  }
+  
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .login {
+    cursor: pointer;
+    background-color:#32AAA1;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size:16px;
+    color: white;
+  }
+
+  .logo_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-image: url("../pfa_assets/icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Style the thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #32AAA1;
+    border-radius: 5px;
+  }
+  
+  /* Style the track */
+  ::-webkit-scrollbar-track {
+    background-color: #06080d;
+  }
+
+  
+  .second_part {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .second_part > div {
+    margin-bottom: 80px ;
+  }
+
+  .planning_title  {
+    font-size: 5em;
+    color: #32AAA1;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .planning_items {
+    display: flex;
+
+  }
+
+  .Monday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Monday > div {
+    margin-top: 20px ;
+  }
+
+  .day {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .tennis {
+    width: 110px;
+    height: 110px;
+    background-image: url("../pfa_assets/icons/tennis.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .football {
+    width: 110px;
+    height: 110px;
+    background-image: url("../pfa_assets/icons/football.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .volleyball {
+    width: 110px;
+    height: 110px;
+    background-image: url("../pfa_assets/icons/volleyball.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .basketball {
+    width: 110px;
+    height: 110px;
+    background-image: url("../pfa_assets/icons/basketball-ball.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .plan_description {
+    color: white;
+    text-align: center;
+    color: #C4BABA;
+    font-size:20px;
+    
+    padding: 20px 8%;
+  }
+
+  .line {
+    width: 90%;
+  }
+
+
+  .team {
+    display: flex;
+    padding: 0 5%;
+    justify-content: center;
+  }
+  
+  .team > div {
+    margin-bottom: 55px;
+  }
+
+  
+
+  .basketball_image {
+    background-image: url('../pfa_assets/images/basketball.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .football_image {
+    background-image: url('../pfa_assets/images/football.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tennis_image {
+    background-image: url('../pfa_assets/images/tennis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .volleyball_image {
+    background-image: url('../pfa_assets/images/Volleyball.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sport_description {
+    color: white;
+    color: #C4BABA;
+    font-size:20px;
+    width: 80%;
+  }
+  
+  .sport_title {
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .learnMore{
+    padding: 8px 10px;
+    color: black;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    width: 17%;
+    margin-right: 80px;
+    font-size:15px;
+    cursor: pointer;
+  }
+
+  .Apply {
+    padding: 8px 10px;
+    color: white;
+    border: none;
+    background-color: #FFA500;
+    border-radius: 5px;
+    width: 17%;
+    font-size:15px;
+    cursor: pointer;
+  }
+
+  .sport_descL {
+    transform: translateX(8.5%);
+  }
+
+  .buttons {
+    transform: translateY(145%);
+  }
+  
+
+  footer {
+    margin-top:260vh ;
+    padding: 20px 8.5%;
+    color: white;
+    border-top: 2px solid #222530;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socials {
+    width: 10vw;
+    margin-top: 5px;
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .socials img {
+    width:35px;
+    height: 35px;
+  }
+  

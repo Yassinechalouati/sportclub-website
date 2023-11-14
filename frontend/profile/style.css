@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+    
+}
+
+.avatar {
+      
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.avatar-dropdown {
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 100%; 
+  right: 0 ;
+  background-color: rgba(14,18,26,255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  border-radius: 6px;
+  animation: dropdown-animation 0.5s;
+  
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.logout-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.dropdown-item a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; 
+}
+
+.user-name {
+  margin-left:8px;
+  margin-top: 10px;
+}
+
+.line_break {
+  height: 0.2px;
+  background-color: grey;
+  border: none;
+}
+
+
+
+.down-arrow {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -30px;
+  cursor: pointer;
+  margin-left: 4px;
+ margin-top: 15px;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    background-color: #18181B;
+  }
+
+  .title {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #nav-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+nav ul li a:hover {
+    color: #13c6b1;
+}
+
+.login {
+    cursor: pointer;
+    background-color:#32AAA1;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size:16px;
+    color: white;
+  }
+
+  .logo_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-image: url("../pfa_assets/icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Style the thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #32AAA1;
+    border-radius: 5px;
+  }
+  
+  /* Style the track */
+  ::-webkit-scrollbar-track {
+    background-color: #06080d;
+  }
+
+  .container {
+    display: flex;
+    background-color: #374151;
+    width: 85%;
+    height: 70%;
+    border-radius: 10px;
+  }
+
+  .pdp {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%; 
+    border-radius: 10px;
+  }
+
+  .information {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .information > div {
+    margin-bottom: 13px;
+  }
+
+  .info {
+    color: white;
+    font-size: 20px;
+  }
+
+  .label {
+    color: #32AAA1;
+    font-size: 25px;
+  }
+
+  .sport {
+    width: 32%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #FFA500;
+  }
+
+  .iconb {
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Edit {
+    /* Styles for the <a> tag */
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .Edit input[type="button"] {
+    /* Styles for the <input> button */
+    cursor: pointer;
+    background-color: #32AAA1;
+    padding: 7px 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .button_edit {
+    text-decoration: none;
+
+  }
+
+  .Delete {
+    /* Styles for the <a> tag */
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .Delete input[type="button"] {
+    /* Styles for the <input> button */
+    cursor: pointer;
+    background-color: #AA3232;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  display: none;
+}
+
+.confirmation-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  display: none;
+}
+
+.confirmation-message .message-content {
+  text-align: center;
+}
+
+.confirmation-message h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.confirmation-message p {
+  margin-bottom: 20px;
+}
+
+.confirmation-message .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmation-message .cancel-button,
+.confirmation-message .delete-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.confirmation-message .cancel-button {
+  background-color: #cccccc;
+  color: #ffffff;
+  border: none;
+}
+
+.confirmation-message .delete-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+}
+
+
+footer {
+  padding: 20px 8.5%;
+  color: white;
+  border-top: 2px solid #222530;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  width: 10vw;
+  margin-top: 5px;
+  display:flex;
+  justify-content:space-between
+}
+
+.socials img {
+  width:35px;
+  height: 35px;
+}

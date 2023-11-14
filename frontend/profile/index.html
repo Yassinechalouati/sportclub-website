@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav > 
+            <div class="logo_title">
+            <div class="logo"></div>
+            <a class= "title" href="#" >Playmakers Club</a>
+            </div>
+            <ul id="nav-content">
+                <li> <a class="active" href="/home">Home</a> </li>
+                <li> <a href ="/about_us">About us</a> </li>
+                <li> <a href="/contact_us">Contact us</a>
+            </ul>
+        </nav>  
+        
+        <div class="container">
+            <div class="pdp"> 
+            </div>
+            <div class="information">
+                <div  class="label">Full Name</div>
+                <div id="Fname" class="info"></div>
+                <div  class="label">Phone Number</div>
+                <div id="Number" class="info"></div>
+                <div class="label">Birth Date</div>
+                <div id="date" class="info"></div>
+                <div class="label">Principal Sport</div>
+                <div class="sport"> 
+                    <div class="iconb"></div>
+                    <div id="sport" style="color: white; margin-right: 5px;"> </div>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="Delete">
+                        <input type="button" value="Delete" onclick="showConfirmationMessage()">
+                      </a>
+
+                      <div class="overlay" id="overlay"></div>
+                      
+                      <!-- Confirmation Message -->
+                      <div class="confirmation-message" id="confirmationMessage">
+                        <div class="message-content">
+                          <h3>Confirmation</h3>
+                          <p>Are you sure you want to delete your account?</p>
+                          <div class="buttons">
+                            <button class="cancel-button" onclick="hideConfirmationMessage()">Cancel</button>
+                            <button class="delete-button" onclick="deleteAccount()">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                          
+                                      
+                    <a href="/edit_profile_data" class="Edit">
+                        <input type="button" value="Edit">
+                      </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+<footer> 
+    <div class="copyright">
+      Copyright 2023 Ⓒ, Moviez, Inc.
+    </div>
+    <div>
+     
+      <div class="socials">
+        <img src="../pfa_assets/icons/facebook.png" alt="facebook">
+        <img src="../pfa_assets/icons/instagram.png" alt="instagram">
+        <img src="../pfa_assets/icons/tiktok.png" alt="youtube">
+      </div>
+    </div>
+  
+      </div>
+    
+  </footer>
+</html>

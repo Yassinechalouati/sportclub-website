@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sign_in/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Forgot Password!</h2>
+            <h4 class="animation a2">Please enter your phone number below. We will send you a new password via SMS.</h4>
+          </div>
+          <div class="form">
+            <input id ="tel" type="tel" class="form-field animation a3" placeholder="Number" oninput="limitCharacters(this, 8)">
+            <button type="submit" class="animation a4" onclick="forgot()">SUBMIT</button>
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+      <script src="script.js"></script>
+      
+</body>
+</html>

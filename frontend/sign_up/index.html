@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Join our team today!</h2>
+            <h4 class="animation a2">Fill the form to proceed</h4>
+          </div>
+          <div class="form">
+            <input type="tel" id="telInput" class="form-field animation a3" placeholder="tel" oninput="limitCharacters(this, 8)">
+            <input type="text" id="nomInput" class="form-field animation a4" placeholder="NomAd">
+            <input type="text" id="prenomInput" class="form-field animation a5" placeholder="PernomAd">
+            <input type="date" id="dateInput" class="form-field animation a6">
+            <select id="sportInput" class="form-field animation a7">
+              <option value="BasketBall">BasketBall</option>
+              <option value="Tennis">Tennis</option>
+              <option value="VolleyBall">VolleyBall</option>
+              <option value="FootBall">FootBall</option>
+            </select>
+            <input type="file" class="form-field animation a8" id="actual-btn" hidden="">
+            <label class="choose_pic animation a9" for="actual-btn">UPLOAD PICTURE</label>
+
+            <img  id="image-preview" src="" alt="Selected Image">
+            <button class="animation a10" onclick="signup()">SIGN UP</button>
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Welcome to Playmakers Club!</h2>
+            <h4 class="animation a2">Log in to your account using Phone Number and password</h4>
+          </div>
+          <div class="form">
+            <input id="tel" type="tel" class="form-field animation a3" placeholder="Number" oninput="limitCharacters(this, 8)">
+
+            <input id="pword" type="password" class="form-field animation a4" placeholder="Password">
+            <p class="animation a5"><a href="/forgot_pass">Forgot Password</a></p>
+            <button type="submit" class="animation a6" onclick="login()">LOGIN</button>
+            <div> <button type="button" id ="Create" class="animation a7" onclick="route()">CREATE ACCOUNT </button> </div>
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+      <script src="script.js"></script>
+      
+</body>
+</html>

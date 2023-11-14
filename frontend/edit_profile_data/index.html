@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <nav > 
+            <div class="logo_title">
+            <div class="logo"></div>
+            <a class= "title" href="#" >Playmakers Club</a>
+            </div>
+            <ul id="nav-content">
+                <li> <a class="active" href="/home">Home</a> </li>
+                <li> <a href ="/about_us">About us</a> </li>
+                <li> <a href="/contact_us">Contact us</a>
+            </ul>
+        </nav>
+        
+          <div class="container">
+            <form style="width:100%; height: 100%; display: flex;">
+                <div class="left-content">
+                    <div class="label">
+                        Profile Picture
+                    </div>
+                    <div class="pfp"></div>
+                    <div style ="transform: translateY(35%);">
+                        <input type="file" id="actual-btn" hidden="">
+                        <label class="choose_pic" for="actual-btn">Upload picture</label>
+    
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div style="text-align: center;" class="label">
+                      Account Details
+                    </div>
+                    <div style="margin-left: 15px;" class="label">First Name</div>
+                    <input class="field" id="firstNameInput" type="text" placeholder="Firstname...">
+                    <div style="margin-left: 15px;" class="label">Last Name</div>
+                    <input class="field" id="lastNameInput" type="text" placeholder="Lastname...">
+                    <div style="margin-left: 15px;" class="label">Phone Number</div>
+                    <input class="field" id="phoneNumberInput" type="tel" placeholder="Phonenumber..." oninput="limitCharacters(this, 8)">
+                    
+                    <div class="row">
+                      <div class="ele1">
+                        <div style="margin-left: 15px;" class="label">Birth Date</div>
+                        <input class="field1" id="birthDateInput" type="date">
+                      </div>
+                      <div class="ele2">
+                        <div style="margin-left: 15px;" class="label">Sport</div>
+                        <select class="field1" id="sportSelect">
+                          <option value="BasketBall">BasketBall</option>
+                          <option value="Tennis">Tennis</option>
+                          <option value="VolleyBall">VolleyBall</option>
+                          <option value="FootBall">FootBall</option>
+                        </select>
+                      </div>
+                    </div>
+                    <input onclick="Modify()" class="submit" type="button" value="Save Changes">
+                  </div>
+                  
+            </form>
+            
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+<footer> 
+  <div class="copyright">
+    Copyright 2023 Ⓒ, Moviez, Inc.
+  </div>
+  <div>
+   
+    <div class="socials">
+      <img src="../pfa_assets/icons/facebook.png" alt="facebook">
+      <img src="../pfa_assets/icons/instagram.png" alt="instagram">
+      <img src="../pfa_assets/icons/tiktok.png" alt="youtube">
+    </div>
+  </div>
+
+    </div>
+  
+</footer>
+</html>
